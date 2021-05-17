@@ -1,0 +1,48 @@
+<head>
+
+
+    <title>prob2.html</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <form action="probl2.php" method="post" onsubmit="return validateDate()">
+
+        <h3>When you were born</h3>
+
+        Enter your birth date in the format <br>
+
+
+        <input type="text" name="dob" id="dob" value="1900/01/01" />
+
+        <br><br>
+
+
+        <input type="Submit" value="OK" name="btnOK" id="btnOK" />
+
+        <input type="reset" value="Cancel" />
+
+        <script>
+            function validateDate() {
+                var date = document.getElementById("dob").value;
+                var dateExp = /^([0-9]{4})\/([0-9]{2})\/([0-9]{2})$/;
+                if (!dateExp.test(date)) {
+                    alert(date + " is ill-formed.Re-enter your birth date.")
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+    </form>
+
+</body>
+
+</html>

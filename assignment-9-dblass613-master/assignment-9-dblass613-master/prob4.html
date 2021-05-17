@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="prob4.php" method="get">
+        <table>
+            <caption>
+                <h3>Books on Loan</h3>
+            </caption>
+            <tr>
+                <th>Name</th>
+                <th>Borrowed</th>
+                <th>Returned</th>
+            </tr>
+            <tr>
+                <th>Al</th>
+                <td><input type="number" name="borrowed[al]" size="8"></td>
+                <td><input type="number" name="returned[al]" size="8"></td>
+            </tr>
+            <tr>
+                <th>Mary</th>
+                <td><input type="number" name="borrowed[mary]" size="8"></td>
+                <td><input type="number" name="returned[mary]" size="8"></td>
+            </tr>
+            <tr>
+                <th>Ed</th>
+                <td><input type="number" name="borrowed[ed]" size="8"></td>
+                <td><input type="number" name="returned[ed]" size="8"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
